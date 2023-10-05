@@ -14,7 +14,7 @@ h5 {
 }
 
 .flexReceta {
-  margin: 4px;
+  margin: 2px;
   background-color: $color-cajaRecetas;
   border-radius: 10px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -70,7 +70,6 @@ h5 {
     grid-area: flexReceta__img;
     display: flex;
     justify-content: center;
-
     img {
       object-fit: cover;
       max-width: 100%;
