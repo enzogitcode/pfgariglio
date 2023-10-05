@@ -15,7 +15,10 @@ main {
 }
 
 .index__background {
-  background: linear-gradient(to bottom, #D6DADB, #A4BA34, #BF8B4B);
+  background-image: url(../imgs/backgroundIndex.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 body {
