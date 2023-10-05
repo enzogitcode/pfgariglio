@@ -9,12 +9,13 @@
 main {
   min-height: 80vh;
 }
-.index__background {
+/*.index__background {
   background-image: url(../imgs/backgroundIndex.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}
+}*/
+.index__background {background: linear-gradient(to bottom #98A4B4, #BF8B4B, #A9B43C, #A4BA34, #3E5902);}
 
 body {
   background-image: url(../imgs/maderaNegraFondo.jpg);
