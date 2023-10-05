@@ -51,3 +51,14 @@ Se le abre el cráneo al pobre y a por los sesos.
 
 15
 Se sirve con patatas, una ensalada o escarola y vino añejo.
+
+            <div>Somos una pequeña empresa familiar dedicada a la cría y engorde de ganado porcino. Desde 2015 estamos
+                instalados en la región del valle conesino. Tenemos un compromiso con la calidad de nuestros productos.
+                <div>En nuestro sitio web Todocer ofrecemos las mejores recetas para cada corte de carne, incentivando
+                    así el consumo de este producto sano y nutritivo.
+
+                    Colaboran con nosotros numerosos profesionales de la ganadería y la cocina.</div>
+                <div>
+                    Usted usuario es el verdadero corazón de nuestra empresa.
+                </div>
+                <div class="quienessomos__muchasGracias">¡Muchas Gracias!</div>
