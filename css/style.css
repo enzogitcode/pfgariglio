@@ -145,16 +145,19 @@ h3 {
 
 .quienesSomos {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  display: flex;
-  flex-direction: column;
+  display: grid;
   justify-content: center;
   align-items: center;
 }
+.quienesSomos img {
+  width: 250px;
+  height: 250px;
+}
 
 .quienessomos__muchasGracias {
+  grid-area: quienesSomos__muchasGracias;
   font-weight: bold;
   font-size: 30px;
-  position: relative;
 }
 
 .cardContainer {
