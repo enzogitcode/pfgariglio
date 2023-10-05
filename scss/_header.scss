@@ -1,0 +1,58 @@
+header nav {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    padding: 4px;
+
+    li {
+        padding: 5px;
+        display: inline-flex;
+        margin-top: 10px;
+        justify-content: center;
+        background-color: $color-rojo;
+        border-radius: 50px;
+
+        a {
+            @include fuenteriffic;
+            @include listas;
+            padding: 5px;
+            color: $letrablanca;
+
+        }
+    }
+}
+
+.cajaTitulo {
+    align-items: center;
+    background-color: #000000;
+    border-radius: 25px;
+}
+
+
+h1 {
+    background-color: $color-rojo;
+    color: $letrablanca;
+    border-radius: 25px;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+h2 {
+    background-color: $color-cajaRecetas;
+    color: #000000;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold
+}
+
+h3 {
+    @extend h2;
+    font-size: 20px;
+}
+
+.index__h1 {
+    border: ridge $color-verde 5px;
+
+    &:hover {
+        border: outset $color-verde 5px;
+    }
+}
