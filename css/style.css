@@ -147,6 +147,11 @@ h3 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
+.quienessomos__muchasGracias {
+  font-weight: bold;
+  font-size: 30px;
+}
+
 .cardContainer {
   display: flex;
   flex-wrap: wrap;
