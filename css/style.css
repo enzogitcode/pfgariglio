@@ -143,13 +143,18 @@ h3 {
   background-color: rgb(13, 189, 7);
 }
 
-.quienesSomos p {
+.quienesSomos {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .quienessomos__muchasGracias {
   font-weight: bold;
   font-size: 30px;
+  position: relative;
 }
 
 .cardContainer {
@@ -224,7 +229,7 @@ h5 {
 .flexReceta__titulo {
   grid-area: recetaTitulo;
   font-size: 30px;
-  margin: 5px 0 0 0;
+  margin: 5px 0 1.5rem 0;
 }
 .flexReceta__titulo:hover {
   text-decoration: underline;
@@ -233,6 +238,7 @@ h5 {
 .flexReceta__aviso {
   grid-area: recetaAviso;
   font-size: 18px;
+  margin-bottom: 2rem;
 }
 
 .flexReceta__aviso__RecetaPicante {
@@ -272,6 +278,8 @@ h5 {
 }
 .flexReceta__img img {
   object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .form-control:focus {

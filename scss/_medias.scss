@@ -4,8 +4,6 @@
 
     }
     .flexReceta__img {
-        justify-content: center;
-        align-items: center;
-        
+        @include aljust        
     }
 }

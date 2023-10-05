@@ -20,10 +20,14 @@
 }
 
 .quienesSomos {
-  p {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    @include aljust;
   }
-}
+
 .quienessomos__muchasGracias {
   font-weight: bold;
-  font-size: 30px;}
+  font-size: 30px;
+  position: relative;
+}
