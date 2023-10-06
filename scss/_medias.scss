@@ -6,4 +6,6 @@
     .flexReceta__img {
         @include aljust        
     }
+    .quienesSomos__img1 img {max-width: fit-content;
+    max-height: fit-content;}
 }

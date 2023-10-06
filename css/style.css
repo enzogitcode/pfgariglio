@@ -1,18 +1,309 @@
-/* Error: expected "{".
- *    ,
- * 31 | object-fit: cover;
- *    |                  ^
- *    '
- *   scss\_contacto.scss 31:18  @import
- *   scss\style.scss 6:9        root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a    \2577 \a 31 \2502  object-fit: cover;\d\a    \2502                   ^\a    \2575 \a   scss\\_contacto.scss 31:18  @import\a   scss\\style.scss 6:9        root stylesheet';
+@font-face {
+  font-family: RifficFreeBold;
+  src: url(../fonts/RifficFree-Bold.ttf);
 }
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-family: RifficFreeBold;
+}
+
+main {
+  min-height: 80vh;
+}
+
+.index__background {
+  background-image: url(../imgs/backgroundIndex.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body {
+  background-image: url(../imgs/maderaNegraFondo.jpg);
+}
+
+@font-face {
+  font-family: RifficFreeBold;
+  src: url(../fonts/RifficFree-Bold.ttf);
+}
+@font-face {
+  font-family: mexicana;
+  src: url(../fonts/Mexicana.ttf);
+}
+@font-face {
+  font-family: mexicanhollow;
+  src: url(../fonts/MexicanaHollow.ttf);
+}
+footer {
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  border-radius: 25px;
+  justify-content: center;
+  align-items: center;
+  font-family: rifficFreeBold;
+  color: aliceblue;
+}
+footer p {
+  font-size: 30px;
+  background-color: rgba(243, 6, 6, 0.8);
+  border-radius: 50px;
+  margin-bottom: 0px;
+}
+
+footer nav li {
+  list-style: none;
+  text-decoration: none;
+  display: inline-flex;
+  margin: 20px;
+}
+
+.socialLink nav li a {
+  list-style: none;
+  text-decoration: none;
+  color: aliceblue;
+}
+.socialLink nav ul li svg {
+  width: 50px;
+  height: 50px;
+}
+
+header nav {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  padding: 4px;
+}
+header nav li {
+  padding: 5px;
+  display: inline-flex;
+  margin-top: 10px;
+  justify-content: center;
+  background-color: rgba(243, 6, 6, 0.8);
+  border-radius: 50px;
+}
+header nav li a {
+  font-family: rifficFreeBold;
+  list-style: none;
+  text-decoration: none;
+  padding: 5px;
+  color: rgb(240, 248, 255);
+}
+
+.cajaTitulo {
+  align-items: center;
+  background-color: #000000;
+  border-radius: 25px;
+}
+
+h1 {
+  background-color: rgba(243, 6, 6, 0.8);
+  color: rgb(240, 248, 255);
+  border-radius: 25px;
+  margin-top: 5px;
+  padding: 10px;
+}
+
+h2, h3 {
+  background-color: rgb(207, 152, 85);
+  color: #000000;
+  font-size: 25px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+.index__h1 {
+  border: ridge rgb(13, 189, 7) 5px;
+}
+.index__h1:hover {
+  border: outset rgb(13, 189, 7) 5px;
+}
+
+.mainContactos {
+  justify-content: center;
+}
+
+.form-control:focus {
+  box-shadow: 1px 5px 0 rgb(13, 189, 7);
+}
+
+.botonForm {
+  background-color: rgb(243, 6, 6);
+}
+.botonForm:hover {
+  box-shadow: 4px 1px 0 #000000;
+  background-color: rgb(243, 6, 6);
+}
+.botonForm:hover:focus {
+  background-color: rgb(13, 189, 7);
+}
+
+.quienesSomos__Todocer {
+  max-width: 20rem;
+  max-height: 25rem;
+  object-fit: cover;
+}
+
+.quienesSomosCaja {
+  margin: 2px;
+  background-color: rgb(207, 152, 85);
+  border-radius: 10px;
+}
+.quienesSomosCaja p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.quienessomos__muchasGracias {
+  font-weight: bold;
+  font-size: 30px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardItem {
+  width: 18rem;
+  display: inline-flex;
+  flex-wrap: wrap;
+  background-image: url(../imgs/maderaNegraFondo.jpg);
+  border: groove rgb(13, 189, 7) 2px;
+  margin: 5px;
+}
+
+.flexItemCorte {
+  display: inline-flex;
+  background-color: rgb(231, 3, 3);
+  color: #fff;
+  margin: 10px;
+  border-radius: 50px;
+  justify-content: space-evenly;
+}
+.flexItemCorte :hover {
+  transform-origin: left;
+  transition-duration: 0.9s;
+  border: dashed rgb(128, 45, 45) 5px;
+}
+.flexItemCorte a {
+  list-style: none;
+  text-decoration: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 35px;
+  color: rgb(240, 248, 255);
+  text-align: center;
+  border-radius: 50px;
+  padding: 10px;
+  border: 5px rgb(13, 189, 7) solid;
+}
+
+h5 {
+  justify-content: right;
+  padding: 5px;
+  text-align: center;
+  background-color: rgb(207, 152, 85);
+  border: dotted 1px;
+}
+
+.cajaDeRecetasCompletas {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.flexReceta {
+  margin: 2px;
+  background-color: rgb(207, 152, 85);
+  border-radius: 10px;
+  display: grid;
+  grid-template-areas: "recetaTitulo recetaTitulo" "recetaAviso recetaAviso" "ingredientes flexReceta__img" "preparacion preparacion";
+}
+
+.form-check ul li {
+  list-style: none;
+  text-decoration: none;
+}
+
+.flexReceta__titulo {
+  grid-area: recetaTitulo;
+  font-size: 30px;
+  margin: 5px 0 1.5rem 0;
+}
+.flexReceta__titulo:hover {
+  text-decoration: underline;
+}
+
+.flexReceta__aviso {
+  grid-area: recetaAviso;
+  font-size: 18px;
+  margin-bottom: 2rem;
+}
+
+.flexReceta__aviso__RecetaPicante {
+  font-size: 30px;
+  font-family: mexicana;
+}
+.flexReceta__aviso__RecetaPicante:hover {
+  text-decoration: underline dashed rgb(243, 6, 6);
+}
+
+.flexReceta__ingredientes {
+  grid-area: ingredientes;
+}
+.flexReceta__ingredientes p {
+  text-decoration: none;
+  font-size: 25px;
+}
+.flexReceta__ingredientes:hover {
+  text-decoration: underline;
+}
+
+.flexReceta__preparacion {
+  grid-area: preparacion;
+}
+.flexReceta__preparacion p {
+  text-decoration: none;
+  font-size: 25px;
+}
+.flexReceta__preparacion:hover {
+  text-decoration: underline;
+}
+
+.flexReceta__img {
+  grid-area: flexReceta__img;
+  display: flex;
+  justify-content: center;
+}
+.flexReceta__img img {
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.form-control:focus {
+  box-shadow: 1px 4px rgb(13, 189, 7);
+}
+
+@media (max-width: 768px) {
+  .flexReceta {
+    grid-template-areas: "recetaTitulo" "recetaAviso" "ingredientes" "preparacion" "flexReceta__img";
+  }
+  .flexReceta__img {
+    justify-content: center;
+    align-items: center;
+  }
+  .quienesSomos__img1 img {
+    max-width: fit-content;
+    max-height: fit-content;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
