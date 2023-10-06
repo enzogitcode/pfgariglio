@@ -20,17 +20,18 @@
 }
 
 .quienesSomos {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  display: grid;
   @include aljust;
-
-    
-    img {
-      width: 250px;
-      height: 250px;
-    }
-  
+  margin: 2px;
+  background-color: $color-cajaRecetas;
+  border-radius: 10px;
+  display: grid;
+  grid-template-areas: "quienesSomos__img1 quienesSomos__parrafo1" "quienesSomos__parrafo2 quienesSomos__img1" "quienesSomos__img1 quienesSomos__parrafo1"
 }
+
+object-fit: cover;
+max-width: 100%;
+max-height: 100%;
+
 
 .quienessomos__muchasGracias {
   grid-area: quienesSomos__muchasGracias;
