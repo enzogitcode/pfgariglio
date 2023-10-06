@@ -18,17 +18,45 @@
     }
   }
 }
-.quienesSomos__Todocer {max-width: 20rem; max-height: 25rem; object-fit: cover;}
+
+.quienesSomos__Todocer {
+  max-width: 20rem;
+  max-height: 25rem;
+  object-fit: cover;
+}
+
 .quienesSomosCaja {
-  
   margin: 2px;
-  background-color: $color-cajaRecetas; 
+  background-color: $color-cajaRecetas;
   border-radius: 10px;
-  p {font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
+  p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
 }
 
 .quienessomos__muchasGracias {
   font-weight: bold;
   font-size: 30px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.algunosDatosCaja {
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  img {
+    max-width: 300px;
+    max-height: 300px;
+    margin: 5px;
+
+  }
+}
+
+.algunosDatosCaja__item {
+  ul li {
+    @include listas;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
 }
